@@ -62,7 +62,7 @@ function todoify(token, TokenConstructor) {
 	token.content = token.content.slice(3);
 
 	if (token.children[1].position) {
-		token.children[1].position += 3
+		token.children[1].position += 2
 	}
 
 	if (token.children[1].size) {

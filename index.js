@@ -58,15 +58,15 @@ function isTodoItem(tokens, index) {
 
 function todoify(token, TokenConstructor) {
 	token.children.unshift(makeCheckbox(token, TokenConstructor));
-	token.children[1].content = token.children[1].content.slice(3);
-	token.content = token.content.slice(3);
+	token.children[1].content = token.children[1].content.slice(4);
+	token.content = token.content.slice(4);
 
 	if (token.children[1].position) {
-		token.children[1].position += 2
+		token.children[1].position += 4
 	}
 
 	if (token.children[1].size) {
-		token.children[1].size -= 3
+		token.children[1].size -= 4
 	}
 
 	if (useLabelWrapper) {

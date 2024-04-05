@@ -3,6 +3,7 @@
   "version": "2.1.4",
   "description": "A markdown-it plugin to create GitHub-style task lists",
   "main": "index.js",
+  "types": "./index.d.ts",
   "scripts": {
     "test": "mocha --timeout 5000",
     "clean": "rm -Rf dist && mkdir dist",
@@ -16,8 +17,8 @@
     "type": "git",
     "url": "git@github.com:revin/markdown-it-task-lists.git"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
     "browserify": "^16.1.1",
     "cheerio": ">=0.20.0",
     "markdown-it": ">=7.0.0",

@@ -27,8 +27,8 @@ npm install markdown-it-task-lists
 Use it the same as a normal markdown-it plugin:
 
 ```js
-var md = require('markdown-it');
-var taskLists = require('markdown-it-task-lists');
+import md from 'markdown-it'
+import taskLists from 'markdown-it-task-lists'
 
 var parser = md().use(taskLists);
 
